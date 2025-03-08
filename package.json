@@ -1,0 +1,6 @@
+{
+  "name": "zsh-theme",
+  "version": "1.0.1",
+  "description": "The WeMake ZSH Theme transforms your terminal into a powerful, intuitive workspace that enhances productivity and reduces cognitive load.",
+  "main": "WeMake.zsh-theme"
+}

@@ -64,15 +64,19 @@ Beyond the prompt, WeMake ZSH Theme provides a comprehensive environment optimiz
 
 ## 🔧 Installation
 
-```bash
-# Clone the repository
-git clone https://github.com/WeMake-AI/zsh-theme ~/.oh-my-zsh/themes/
+```sh
+# Download the theme file directly
+curl -o ~/.oh-my-zsh/themes/WeMake.zsh-theme https://raw.githubusercontent.com/WeMake-AI/zsh-theme/main/WeMake.zsh-theme
 
-# Add the theme to your .zshrc
-echo 'source ~/.oh-my-zsh/themes/WeMake.zsh-theme' >> ~/.zshrc
+# Or alternatively using wget
+# wget -O ~/.oh-my-zsh/themes/WeMake.zsh-theme https://raw.githubusercontent.com/WeMake-AI/zsh-theme/main/WeMake.zsh-theme
 
 # Set WeMake as your ZSH theme
 sed -i '' 's/ZSH_THEME=".*"/ZSH_THEME="WeMake"/' ~/.zshrc
+
+# Add the theme to your .zshrc right after the ZSH_THEME line
+sed -i '' '/ZSH_THEME="WeMake"/a\
+source ~/.oh-my-zsh/themes/WeMake.zsh-theme' ~/.zshrc
 
 # Reload your terminal configuration
 source ~/.zshrc
