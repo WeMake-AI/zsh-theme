@@ -106,7 +106,7 @@ printPsOneLimiter() {
 
 # PS1 arrow - green # PS2 arrow - cyan # PS3 arrow - white
 
-PROMPT="%F{black}${char_up_and_right_divider} ${ssh_marker} %f%F{cyan}%~%f$(prepareGitStatusLine)
+PROMPT="%F{black}${char_up_and_right_divider} ${ssh_marker} %f%F{38;2;56;99;255}%~%f$(prepareGitStatusLine)
 %F{green} ${char_arrow}%f "
 
 RPROMPT=""
@@ -114,7 +114,7 @@ RPROMPT=""
 # PS2 Example 
 # wc << EOF 
 # wc << HEAR 
-PS2="%F{black} %_ %f%F{cyan}${char_arrow} "
+PS2="%F{black} %_ %f%F{38;2;56;99;255}${char_arrow} "
 
 # PS3 The value of this parameter is used as the prompt for the select
 # command (see SHELL GRAMMAR above).
